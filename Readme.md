@@ -87,8 +87,8 @@ The bot should now be running and responding to messages on Telegram. 🎉
 The bot uses **Ollama** to generate AI responses. Here’s how the AI request is made:
 ```javascript
 const response = await axios.post("http://localhost:11434/api/generate", {
-    model: "smollm2:135m",  // AI Model used (change if needed)
-    prompt: chatContext, // User's chat history + latest message
+    model: "smollm2:135m",
+    prompt: chatContext,
     stream: false
 });
 ```
